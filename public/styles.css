@@ -17,3 +17,10 @@ label{
     margin:20px auto;
     width:100%
 }
+
+/*Register Form*/
+
+#log{
+    color: red;
+    text-decoration: none;
+}
