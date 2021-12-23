@@ -1,0 +1,19 @@
+.b_forms{
+    width:400px;
+    padding:20px;
+    background: #dfdfdf;
+    font-family: 'Roboto';
+    margin:40px auto 0;
+}
+
+label{
+    font-family: 'Roboto';
+    text-align: left;
+    width:100%;
+    margin: 10px 0;
+}
+
+.b_forms .btn{
+    margin:20px auto;
+    width:100%
+}
