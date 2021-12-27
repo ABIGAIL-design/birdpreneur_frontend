@@ -1,8 +1,10 @@
 import React from 'react'
+import PageTitle from '../components/PageTitle'
 
 export default function Register() {
     return (
         <div>
+            <PageTitle title="Register" />
             <div className="">
                 <form className="form-group b_forms">
                     <label for="username">First Name</label>

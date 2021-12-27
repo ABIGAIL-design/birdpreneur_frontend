@@ -1,11 +1,17 @@
 .b_forms{
     width:400px;
     padding:20px;
-    background: #dfdfdf;
+    /* background: #dfdfdf; */
     font-family: 'Roboto';
-    margin:40px auto 0;
+    margin:40px auto 40px;
 }
 
+.btn-primary{
+    background: #044 !important;
+}
+.btn-primary:hover{
+    background: #044 !important;
+}
 label{
     font-family: 'Roboto';
     text-align: left;
@@ -14,7 +20,7 @@ label{
 }
 
 .b_forms .btn{
-    margin:20px auto;
+    margin:20px auto ;
     width:100%
 }
 
@@ -23,4 +29,107 @@ label{
 #log{
     color: red;
     text-decoration: none;
+}
+
+
+
+/* Header */
+
+.header{
+    width:100%;
+    height:100px;
+    background: #dfdfdf;
+}
+
+.header .inner{
+    display: flex;
+}
+.header .logo{
+    height:100px;
+    background: url('https://www.birdpreneur.africa/static/images/logo0.png');
+    background-size: auto 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpreneurlogo_vkgips.svg
+https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpreneurlogo-white_qkbt5a.svg
+https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpreneurlogo-grey_c8ev2c.svg
+ */
+
+.logo_white{
+    height:100px;
+    width:300px;
+    margin:auto;
+    background: url('https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpreneurlogo-white_qkbt5a.svg');
+    background-size: auto 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header .nav{
+    background:#ddd;
+}
+
+
+/* End of Header Styles */
+
+
+/* footer */
+.page-footer{
+    background:#044;
+    color:#fff;
+}
+
+.black-text{
+    color: black !important;
+}
+
+/* page_title */
+.pagetitle_wrapper{
+    height:250px;
+    background:#044;
+    padding: 120px;
+}
+.page_title{
+    font-size:60px;
+    color:#fff;
+    font-family:'Roboto';
+    text-align:left;
+    font-weight:500;
+}
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 200px);
+    background:url('https://www.birdpreneur.africa/static/images/chicks1.png');
+    background-size:cover
+
+}
+
+.homepage-section{
+    padding:40px;
+}
+.homepage-section h3{
+    font-family: 'Roboto';
+    font-size:30px;
+    padding:80px 10px;
+
+}
+.homepage-box{
+    height:300px;
+    padding:10px;
+}
+.homepage-box .inner{
+    width:100%;
+    height:100%;
+}
+
+.homepage-box .inner .icon{
+    margin:auto;
+    font-size:50px;
+    color:#999;
+}
+
+.homepage-box .inner.coloured{
+    background:#5aa;
 }
