@@ -7,9 +7,15 @@ export default function HomepageMore() {
                 
                 <div className='row'>
                    
-                   <div className="col-sm-3 homepage-box">
-                   <div className="inner">
-                   <div class="icon fas fa-american-sign-language-interpreting"></div>
+                   <div className="col-sm-3 homepage-img">
+                   <div className="inner1">
+                   <div className='photos'>
+                   <img
+                    src="/returnsNN.png"
+                    className="card-img-top"
+                     alt=""
+                     />
+                   </div>
                        
                        <h4>Get Good Returns</h4>
                           <p>
@@ -17,33 +23,51 @@ export default function HomepageMore() {
                               </p>
                    </div>
                    </div>
-                   <div className="col-sm-3 homepage-box">
-                   <div className="inner">
-                   <div class="icon fas fa-american-sign-language-interpreting"></div>
+                   <div className="col-sm-3 homepage-img">
+                   <div className="inner1">
+                   <div className='photos'>
+                   <img
+                    src="/secured.png"
+                    className="card-img-top"
+                     alt=""
+                     />
+                   </div>
                        
-                       <h4>Get Good Returns</h4>
+                       <h4>Founds secured</h4>
                           <p>
-                              High yields from skilled farmers coordinated through our Agrictech Experts 
+                          Get a farm funding with low risk. Extensive Insurance Coverage on farm
                               </p>
                    </div>
                    </div>
-                   <div className="col-sm-3 homepage-box">
-                   <div className="inner">
-                   <div class="icon fas fa-american-sign-language-interpreting"></div>
+                   <div className="col-sm-3 homepage-img">
+                   <div className="inner1">
+                   <div className='photos'>
+                   <img
+                    src="/smart.png"
+                    className="card-img-top"
+                     alt=""
+                     />
+                   </div>
                        
-                <h4>Get Good Returns</h4>
+                <h4>Smart investment</h4>
                    <p>
-                       High yields from skilled farmers coordinated through our Agrictech Experts 
+                   Find opportunity methods of making an investment beyond bonds and stocks
                        </p>
                    </div>
                    </div>
-                   <div className="col-sm-3 homepage-box">
-                   <div className="inner">
-                   <div class="icon fas fa-american-sign-language-interpreting"></div>
+                   <div className="col-sm-3 homepage-img">
+                   <div className="inner1">
+                   <div className='photos'>
+                   <img
+                    src="/changeN.png"
+                    className="card-img-top"
+                     alt=""
+                     />
+                   </div>
                        
-                <h4>Get Good Returns</h4>
+                <h4>Be the change</h4>
                    <p>
-                       High yields from skilled farmers coordinated through our Agrictech Experts 
+                   Empower Farmers & Youth to provide quality food and resolve global hunger.
                        </p>
                    </div>
                    </div> 
@@ -51,5 +75,8 @@ export default function HomepageMore() {
             </div>
             
         </section>
+
+
+        
     )
 }

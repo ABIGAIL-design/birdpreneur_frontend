@@ -1,3 +1,6 @@
+#responsive-navbar-nav{
+    flex-direction: row-reverse;
+}
 .b_forms{
     width:400px;
     padding:20px;
@@ -10,7 +13,7 @@
     background: #044 !important;
 }
 .btn-primary:hover{
-    background: #044 !important;
+    background: #022 !important;
 }
 label{
     font-family: 'Roboto';
@@ -103,7 +106,6 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
     height: calc(100vh - 200px);
     background:url('https://www.birdpreneur.africa/static/images/chicks1.png');
     background-size:cover
-
 }
 
 .homepage-section{
@@ -124,7 +126,7 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
     height:100%;
 }
 
-.homepage-box .inner .icon{
+.homepage-box .inner1 {
     margin:auto;
     font-size:50px;
     color:#999;
@@ -132,4 +134,86 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 
 .homepage-box .inner.coloured{
     background:#5aa;
+}
+.photos{
+    width: 30%;
+    margin: auto;
+    padding: 5px;
+}
+/*Homepage funds*/
+
+    
+    
+
+.card .b_btn{
+    width:30%;
+    margin:auto;
+    
+    
+    
+}
+.photo{
+    width: 20%;
+    padding: 10px;
+    margin: auto;
+}
+.card h1{
+     padding: 10px;
+}
+.card{
+    margin: auto;
+    padding: 20px;
+    
+
+}
+
+/*home connect*/
+
+.text{
+    margin-top: 60px;
+}
+
+.connects{
+    padding: 80px;
+}
+
+
+.homepages
+
+/*homepage fund*/
+
+.Home-fund .col-10{
+    padding: 40px;
+}
+
+
+.farm_list_box{
+    height: 300px;
+    padding: 10px;
+}
+.farm_list_box .inner{
+    width:100%;
+    height:100%;
+    background: #dfdfdf;
+    border-radius: 10px;
+    padding:20px;
+    font-family: 'Roboto';
+}
+.farm_list_box .inner .image{
+    width:50%;
+    height:100%;
+    float:left;
+    border-radius:10px;
+}
+.farm_list_box .inner .details{
+    width:45%;
+    text-align:left;
+    float:left;
+    padding:20px;
+}
+.farm_list_box h3{
+    line-height:60px;
+}
+.farm_list_box p{
+    font-size: 15px;
 }

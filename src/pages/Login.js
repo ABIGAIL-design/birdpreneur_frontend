@@ -1,18 +1,76 @@
-import React from 'react'
+import React,{useState, useContext} from 'react'
 import PageTitle from '../components/PageTitle'
+import {getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword} from 'firebase/auth'
+import {mainFunctions} from "../providers/MainProviders"
+
 export default function Login() {
-    return (
+    const {
+        err,
+        setErr,
+        authTrigger, setAuthTrigger
+      }  = useContext(mainFunctions)
+    
+        const [registerationDetails, setRegisterationDetails] = useState({
+            email:"",
+            password:""
+        })
+        const handleChange = (e) => {
+            // var name = e.target.name
+            // var value = e.target.value
+            var {name, value} = e.target
+            var kk = registerationDetails
+            kk[name] = value
+            setRegisterationDetails(kk)
+    
+            console.log(registerationDetails)
+            // var 
+        }
+    
+        const signIn = async () =>{
+            const authentication = getAuth()
+            
+                await signInWithEmailAndPassword(
+                        authentication,
+                        registerationDetails.email,
+                        registerationDetails.password
+                    ).then((result)=>{
+                        setAuthTrigger(Number(authTrigger) + 1)
+                    }).catch(error =>{
+                        console.log(error.message)
+                        setErr(error.message)
+                    })
+                
+        }
+        return (
         <div>
             <PageTitle title="Login" />
             <div className="">
                 <form className="form-group b_forms">
-                    <label for="username">Username</label>
-                    <input className='b_input form-control' name="username"></input>
+                    {err !== "" &&
+                    <div className="alert alert-danger" role="alert">
+                        {err}
+                    </div>
+                    }
+                    <label htmlFor="username">Email</label>
+                    <input className='b_input form-control' name="email"
+                onChange={(e)=>{
+                    handleChange(e)
+                }}
+                    ></input>
 
-                    <label for="username">Password</label>
-                    <input className='b_input form-control' name="password" type="password"></input>
+                    <label htmlFor="username">Password</label>
+                    <input className='b_input form-control' name="password" type="password"
+                    onChange={(e)=>{
+                        handleChange(e)
+                    }}
+                    ></input>
 
-                    <button className="b_btn btn btn-primary">Submit</button>
+                    <button className="b_btn btn btn-primary"
+                    onClick={(e)=>{
+                        e.preventDefault()
+                        signIn()
+                    }}
+                    >Submit</button>
                 </form>
             </div>
         </div>

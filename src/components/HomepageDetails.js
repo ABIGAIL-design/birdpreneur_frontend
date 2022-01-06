@@ -20,6 +20,13 @@ export default function HomepageDetails() {
                    <div className="inner  coloured"></div>
                    </div> 
                 </div>
+                <div className='card'>
+                    <div className='HomepageFunds'></div>
+                </div>
+
+                <div className='home-connect'>
+                    <div className='HomepageConnect'></div>
+                </div>
             </div>
             
         </section>
