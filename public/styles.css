@@ -217,3 +217,27 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 .farm_list_box p{
     font-size: 15px;
 }
+
+
+/* Investment Page */
+.investment_wrapper{
+margin-top: 40px;
+width:100%;
+height: 250px;
+display:flex;
+flex-wrap: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+}
+.investment_box{
+width: 300px;
+height: 200px;
+background: #ddd;
+margin: 10px;
+float: left;
+flex: 0 0 auto;
+border-radius: 10px;
+padding: 40px;
+}
+
+/* End of Investment Page */
