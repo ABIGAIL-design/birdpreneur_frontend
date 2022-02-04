@@ -6,6 +6,10 @@ import HomepageFunds from '../components/HomepageFunds'
 import HomepageMore from '../components/HomepageMore'
 import HomepageConnect from '../components/HomepageConnect'
 import Investinfarm from '../components/Investinfarm'
+import Impact from '../components/Impact'
+import Testimony from '../components/Testimony'
+import Help from '../components/Help'
+
 // import PageTitle from '../components/PageTitle'
 
 export default function HomePage() {
@@ -17,6 +21,9 @@ export default function HomePage() {
             <HomepageConnect />
             <HomepageMore />
             <Investinfarm/>
+            <Impact/>
+            <Testimony />
+            <Help/>
         </div>
     )
 }

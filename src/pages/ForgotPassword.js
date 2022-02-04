@@ -1,10 +1,9 @@
 import React,{useState, useContext} from 'react'
 import PageTitle from '../components/PageTitle'
-import {Link} from 'react-router-dom'
-import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
+import {getAuth, sendPasswordResetEmail} from 'firebase/auth'
 import {mainFunctions} from "../providers/MainProviders"
 
-export default function Login() {
+export default function ForgotPassword() {
     const {
         err,
         setErr,
@@ -27,13 +26,12 @@ export default function Login() {
             // var 
         }
     
-        const signIn = async () =>{
+        const sendReset = async () =>{
             const authentication = getAuth()
             
-                await signInWithEmailAndPassword(
+                await sendPasswordResetEmail(
                         authentication,
-                        registerationDetails.email,
-                        registerationDetails.password
+                        registerationDetails.email
                     ).then((result)=>{
                         setAuthTrigger(Number(authTrigger) + 1)
                     }).catch(error =>{
@@ -44,7 +42,7 @@ export default function Login() {
         }
         return (
         <div>
-            <PageTitle title="Login" />
+            <PageTitle title="Forgot Password" />
             <div className="">
                 <form className="form-group b_forms">
                     {err !== "" &&
@@ -59,26 +57,15 @@ export default function Login() {
                 }}
                     ></input>
 
-                    <label htmlFor="username">Password</label>
-                    <input className='b_input form-control' name="password" type="password"
-                    onChange={(e)=>{
-                        handleChange(e)
-                    }}
-                    ></input>
+                    
 
                     <button className="b_btn btn btn-primary"
                     onClick={(e)=>{
                         e.preventDefault()
-                        signIn()
+                        sendReset()
                     }}
-                    >Submit</button>
+                    >Send Password Reset</button>
                 </form>
-                
-                <div>
-                <small>
-                    <Link to="/forgot">Forgot Password</Link>
-                </small>
-                </div>
             </div>
         </div>
     )

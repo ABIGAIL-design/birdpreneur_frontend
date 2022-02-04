@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/birdpreneur_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -22,9 +22,39 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   
     <title>Birdpreneur</title>
+    
+    
+    <style>
+    
+      .whatsapp {
+        position: fixed;
+        right: 0px;
+        top: 70%;
+    }
+        .whatsapp h5 {
+        color: whitesmoke;
+        background-color: #055;
+        border-radius: 10px;
+        padding: 12px; 
+        
+    }
+    .whatsapp a{
+      text-decoration: none;
+      
+    }
+    
+    </style>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="whatsapp">
+            
+      <a href="https://api.whatsapp.com/send?phone=2348169905012" target="_blank">    
+      <h5> <i class="fa fa-whatsapp fa-3x fa-spin" aria-hidden="true"></i></h5></a>
+                    
+    </div>
+
   </body>
 </html>

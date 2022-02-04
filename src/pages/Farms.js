@@ -4,15 +4,20 @@ import PaystackButtonComponent from '../components/PaystackButtonComponent';
 
 import {mainFunctions} from "../providers/MainProviders"
 import { Link } from 'react-router-dom';
+import PageTitle from '../components/PageTitle';
 
 export default function Farms() {
     const {
-        isAuthenticated
+        isAuthenticated,
+        formatMoney
     } = useContext(mainFunctions)
     const db = getFirestore()
-    const [allFarms, setAllFarms] = useState([]);
+    const [allFarms, setAllFarms] = useState([])
+    const [filteredFarms, setFilteredFarms] = useState([])
+    const [farmCategory, setFarmCategory] = useState("")
     // [{name:Oyo Farms, location:Oyo},{name:Ogun Farms, location:Ogun}]
     // {}
+
     const getFarms =  async () => {
         const farms = await getDocs(collection(db, "farm"))
         var farm_list = [];
@@ -28,12 +33,38 @@ export default function Farms() {
 
     useEffect(()=>{
         getFarms()
+        const search = window.location.search
+        const params = new URLSearchParams(search)
+        var category = params.get('category')
+        
+        if(typeof category !== "undefined" && category !== null){
+           setFarmCategory(category.toLowerCase()) 
+        }
     },[])
+    
+    useEffect(()=>{
+        if(farmCategory !== ""){
+            var c = allFarms.filter((thisfarm)=>{
+                if(typeof thisfarm.category !== "undefined"){
+                    if(thisfarm.category.toLowerCase() === farmCategory){
+                        return true
+                    }
+                }
+                return false
+            })
+            setFilteredFarms(c)
+        }else{
+            setFilteredFarms(allFarms)
+        }
+    },[allFarms, farmCategory])
+    
+    
 
     return (
         <div className='container'>
+        <PageTitle title={farmCategory + " Farms "} />
         <div className=''>
-            {allFarms.map((thisfarm, index)=>{
+            {filteredFarms.map((thisfarm, index)=>{
                 return(
                   <div key={index} className='farm_list_box row'>
                       <div className='inner'>
@@ -51,7 +82,7 @@ export default function Farms() {
                         <div className="details float-left">
                       <h3>{thisfarm.name}</h3>
                       <p>Location: {thisfarm.location}</p>
-                      <p>Price: {thisfarm.price}</p
+                      <p>Price: {formatMoney(thisfarm.price)}</p
                       >
                         {!isAuthenticated &&
                         <span>

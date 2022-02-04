@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HomepageConnect() {
     return (
-        <section className='Homepage-section'>
+        <section className='homepage-section halfed_section'>
                     <div className='connects'>
                     <div className='container'>
 
@@ -19,7 +19,7 @@ export default function HomepageConnect() {
     
                         <div className='col-sm-6 '>
                         <div className='text'>
-                        <h1>We Connects farmers with lenders and buyers</h1>
+                        <h1>We Connect farmers with lenders and buyers</h1>
                               <p>
                               ... accelerator for smallholder farmers operated by Birdpreneur Experts
                                   </p>

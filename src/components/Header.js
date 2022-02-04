@@ -35,9 +35,18 @@ export default function Header() {
       </>
       }
       <Nav.Link href="/farms">Farms</Nav.Link>
+      <NavDropdown title="Our Farms" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/farms?category=poultry">Poultry</NavDropdown.Item>
+          <NavDropdown.Item href="/goat">Goat</NavDropdown.Item>
+          <NavDropdown.Item href="/maize">Maize</NavDropdown.Item>
+          <NavDropdown.Item href="/soyabeans">Soya Beans</NavDropdown.Item>
+        </NavDropdown>
+      
+      <Nav.Link href="/farms?category=poultry">Poultry</Nav.Link>
       {isAuthenticated &&
         <>
           
+          <Nav.Link href="/account">Account</Nav.Link>
           <Nav.Link href="/dashboard">Dashboard</Nav.Link>
           <Nav.Link href="#"
           onClick={()=>{
