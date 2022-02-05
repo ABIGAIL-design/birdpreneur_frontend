@@ -6,7 +6,8 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import HomePage from './pages/HomePage'
 import Dashboard from './pages/Dashboard'
-
+import HowItWorks from './pages/HowItWorks'
+import AboutUs from  './pages/AboutUs'
 import Header from './components/Header'
 import Footer from './components/Footer';
 
@@ -37,6 +38,8 @@ function App() {
         <Routes>
           {/* My Routes comes here */}
           <Route exact path="/" element={<HomePage/>}/>
+          <Route exact path="/aboutus" element={<AboutUs />}/>
+          <Route exact path="/howitworks" element={<HowItWorks />}/>
           <Route exact path="/login" element={ isAuthenticated ? <Dashboard/> : <Login/>}/>
           <Route exact path="/forgot" element={ isAuthenticated ? <Dashboard/> : <ForgotPassword/>}/>
           <Route exact path="/register" element={ isAuthenticated ? <Dashboard/> : <Register/>}/>

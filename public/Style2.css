@@ -1,44 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=montserrat:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;400;500;700&family=Montserrat:wght@100;300;400;500&display=swap');
 
-body,h1,h2,p,h3,h4,h5,button{
-    font-family: 'montserrat';
+
+/* navigation */
+html{
+    font-family: 'Montserrat';
+}
+body{
+    min-height:calc(100vh);
+    position:relative;
+    padding-bottom:250px;
+    font-family: 'Montserrat';
+}
+p, h1, h2,h3,h4,h5{
+    font-family: 'Montserrat';
 }
 p{
-    font-size:15px;
+    font-size: 14px;
+    font-weight: normal;
 }
-h1{
-font-weight:600;
-font-size:25px !important
+.more_box{
+    padding: 40px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-.decisionText{
-text-align:left
+.about_box{
+    padding: 40px;
+    text-align: left;
+}
+.more_box h2{
+    font-size: 22px;
+    padding: 30px 0;
+}
+.more_box h4{
+    font-size: 16px;
+    padding: 10px 0;
+}
+.about-box{
+    text-align: left;
+}
+.more_details{
+    padding: 40px;
+    text-align: left;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    cursor: pointer;
+  }
+   
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    cursor: pointer;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    outline: 1px solid #bbb;
+    cursor: pointer;
+  }
+
+
+.page-footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
 #responsive-navbar-nav{
     flex-direction: row-reverse;
 }
-
+table{
+    font-family: 'Montserrat';
+}
+tbody{
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
 .b_forms{
     width:400px;
     padding:20px;
     /* background: #dfdfdf; */
-    font-family: 'montserrat';
+    font-family: 'Montserrat';
     margin:40px auto 40px;
 }
-table{
-    font-family: 'montserrat';
-    text-align: left;
-}
-table tbody{
-font-size:10px;
+.btn{
+    border:none !important
 }
 .btn-primary{
     background: #044 !important;
+    border:none;
+    widthhadow: none;
 }
 .btn-primary:hover{
     background: #022 !important;
 }
 label{
-    font-family: 'montserrat';
+    font-family: 'Montserrat';
     text-align: left;
     width:100%;
     margin: 10px 0;
@@ -46,7 +102,7 @@ label{
 
 .b_forms .btn{
     margin:20px auto ;
-    width:100%
+    width:100%;
 }
 
 /*Register Form*/
@@ -55,25 +111,6 @@ label{
     color: red;
     text-decoration: none;
 }
-
-
-
-
-
-/*HELP*/
-
-.help{
-    background-color: rgb(46, 29, 29);
-    height: 400px;
-   
-}
-
-/* {
-    color: white;
-    text-align: center;
-    padding: 5px;
-} */
-
 
 
 
@@ -129,19 +166,24 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 }
 
 /* page_title */
-/* pagetitle_wrapper{
-    height:250px;
-    background:#004444;
-    padding: 120px;
-} */
-.page_title{ 
-    text-transform: capitalize;
-    font-size:40px;
-    font-family:'montserrat';
+.pagetitle_wrapper{
+    height:150px;
+    /* background:#ddd; */
+    /* padding: 120px; */
+    position:relative;
+}
+.page_title{
+    font-size:30px;
+    color:#fff;
+    font-family:'Montserrat';
     text-align:center;
     font-weight:500;
-    color:#004444;
-    margin-bottom: 20px;
+    position:absolute;
+    color:#055;
+    bottom:20px;
+    width: 100%;
+    left:0;
+    text-transform: capitalize;
 }
 
 .hero{
@@ -149,272 +191,248 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
     height: calc(100vh - 200px);
     background:url('https://www.birdpreneur.africa/static/images/chicks1.png');
     background-size:cover
+
 }
-.halfed_section{
-    text-align:left;
-}
+
 .homepage-section{
     padding:40px;
-   
 }
 .homepage-section h3{
-    font-family: 'montserrat';
+    font-family: 'Montserrat';
     font-size:30px;
     padding:80px 10px;
 
 }
 .homepage-box{
     height:300px;
-    /* padding:10px; */
+    padding:10px;
 }
-
-.homepage-img h4{
-    /* background: #055; */
-    height: 30px;
-    font-weight:600;
-    font-size:20px
-    /* padding:10px; */
-}
-/* .homepage-box .inner{
+.homepage-box .inner{
     width:100%;
     height:100%;
-} */
+}
 
-/* .homepage-box .inner1 {
+.homepage-box .inner .icon{
     margin:auto;
     font-size:50px;
     color:#999;
-} */
+}
 
-/* .homepage-box .inner.coloured{
+.homepage-box .inner.coloured{
     background:#5aa;
-} */
-.card{
-    border:none !important;
-    box-shadow:none;
-}
-.homepage-box  .card-img-overlay{
-    margin-top: 100px;
-}
-.homepage-box .card{
-    width:100%;
-    height:100%;
-    
-    background-size:cover
-}
-.homepage-box .poultry{
-    background:url('https://www.birdpreneur.africa/static/images/chicks1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.homepage-box .goat{
-    background:url('https://www.birdpreneur.africa/static/images/goat.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.homepage-box .maize{
-    background:url('https://www.birdpreneur.africa/static/images/maizefarm2.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.homepage-box .soya{
-    background:url('https://www.birdpreneur.africa/static/images/soyabeans.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 
-/* .card-gradient{ 
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.582) 0%, rgba(121,9,9,0.3) 35%, rgba(255,0,0,0.1) 100%);
-    
-    height:100%;
-} */
-.list-group-item.active {
-    z-index: 2;
-    color: #fff;
-    background-color: #1e2020 !important;
-    border-color: #050e0a !important;
+/* Balances */
+.balance_box{
+    width: 300px;
+    height: auto;
+/*     background: #055; */
+    margin: 10px;
+    float: left;
+    flex: 0 0 auto;
+    border-radius: 10px;
+/*     padding:20px; */
+    color:#fff;
+    position:relative;
+/*     border: solid 2px #ddd; */
+/*     box-shadow: 0px 2px 7px #0556; */
+}
+.expected_harvest{
+   color: #055;
+   font-size:12px;
+   font-family:'Montserrat';
 }
 
-.card-title{
-color: white}
-
-.photos{
-    width: 30%;
-    margin: auto;
-    padding: 5px;
+.balance_box_inner{
+    width: 300px;
+    height: auto;
+    background: #FF9800;
+/*     margin: 10px; */
+    float: left;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    padding:20px 20px 50px;
+    color:#fff;
+    position:relative;
+    border: solid 2px #ddd;
+    box-shadow: 0px 2px 7px #0556;
 }
-/*Homepage funds*/
 
-    
-    
+.balance_wrapper{
+    margin: 10px 0 20px;
+    width: 100%;
+    height: 250px;
+    /* align-items: center; */
+    /* background: #9aa; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;   
+}
+.request_money{
+    background:#8BC34A !important;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
 
-.card .b_btn{
-    width:30%;
+.withdrawal_form{
+    max-width: 400px;
     margin:auto;
-    
-    
-    
+    text-align:left;
 }
-.photo{
-    width: 20%;
-    padding: 10px;
-    margin: auto;
+.withdrawal_form input{
+    width:100%;
+    margin: 10px 0;
 }
-.card h1{
-     padding: 10px;
-}
-/* .card{
-    margin: auto;
-    padding: 20px;
-    
-
-} */
-
-/*home connect*/
-
-.text{
-    margin-top: 60px;
-}
-
-.connects{
-    padding: 80px;
-}
-
-
-.homepages
-
-/*homepage fund*/
-
- /* .col-10{
-    margin-right: 120px;
-} */
 
 
 .farm_list_box{
-    height: 300px;
-    padding: 10px;
+    height:300px;
+    padding:10px;
+    /* background: #dfdfdf; */
 }
 .farm_list_box .inner{
     width:100%;
-    height:100%;
+    height: 100%;
     background: #dfdfdf;
     border-radius: 10px;
     padding:20px;
-    font-family: 'montserrat';
+    text-transform: capitalize;
+    position: relative;
 }
-.farm_list_box .inner .image{
-    width:50%;
-    height:100%;
-    float:left;
-    border-radius:10px;
+.farm_list_box .inner h3{
+    line-height: 60px;
 }
-.farm_list_box .inner .details{
-    width:45%;
-    text-align:left;
-    float:left;
-    padding:20px;
+.farm_list_box .buy_button{
+    position: absolute;
+    right:10px;
+    bottom: 10px;
 }
-.farm_list_box h3{
-    line-height:60px;
+.farm_list_box .inner p{
+    color:#999;
+    line-height: 15px;
+
 }
-.farm_list_box p{
+.balance_box .title{
     font-size: 15px;
 }
-
-
-/* Investment Page */
-.investment_wrapper{margin-top: 40px;width:100%;height: 350px;display:flex;flex-wrap: nowrap;overflow-x: auto;overflow-y: hidden;}
-.investment_box{
-width: 300px;
-height: 90%;
-text-align: left;
-background: #055;
-margin: 10px;
-float: left;
-flex: 0 0 auto;
-color:#fff;
-font-family:'montserrat';
-border-radius: 10px;
-padding: 40px;
-box-shadow:0px 2px 4px #0556;
+.balance_box .value{
+    font-weight: 600;
+    font-size: 30px;
 }
-.investment_box.dumb{
-    background: #ddd !important;
+
+.dump_row{
+    width: 100%;
+    height: 50px;
+    background: #ddd;;
+    margin-bottom: 10px;
+    line-height: 50px;
+
 }
-/* End of Investment Page */
-.hero_gradient{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.582) 0%, rgba(121,9,9,0.3) 35%, rgba(255,0,0,0.1) 100%);
+.filter_box{
     width:100%;
-    height:100%;
+    height: 50px;
+    /* background:#ddd; */
+    position:relative;
 }
-.top_header{
-height:60px;
-background: black;
-position:relative
-}
-
-.top_header select{
-position:absolute;
-right:15px;
-top:15px;
-border:none;
-}
-
-.sectionheader{
-width:100%;
-height:40px;
-background: #ddd;
-border-radius: 5px;
-position:relative;
-margin:10px 0;
-}
-
-.sectionheader .title{
-font-family: "montserrat";
-font-size:20px;
-position:absolute;
-left:10px;
-color:#044;
-line-height: 40px;
-}
-
-
-.tablefilter{
-width:100%;
-height:50px;
-position:relative
-}
-
-
-.tablefilter .search{
-    height:40px;
-    position:absolute;
+.filter_box .search{
+    height: 40px;
+    position: absolute;
     top:5px;
-    left:5px;
-    
+    left: 5px;
+}
+.section_header{
+    height:40px;
+    position: relative;
+    background: #ddd;
+    border-radius: 3px;
+    border-bottom: #ddd 1px solid;
+    margin: 40px 0 20px;
+}
+.section_header .title{
+    position: absolute;
+    left:10px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: #777;
+    font-weight: 400;
+    padding:3px
+}
+.save-btn{
+    width: 100px
+}
+.eQWBcd{
+    display: none !important;
+}
+.sc-jRQBWg img{
+    margin:"10px";
+    width:80%;
+    /* border-radius: 50%; */
 }
 
-.dumb_row{
-width:100%;
-height: 50px;
-background: #ddd;
-margin-bottom: 10px;
-line-height: 50px;
+.input_bottom{
+    font-size: 12px;
+    color:#055;
+    font-family: "Montserrat";
+    line-height: 25px;
+    margin-top: 10px;
+}
+.input_bottom a{
+    font-size: 12px;
+    color:#055;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.input_bottom a:hover{
+    color:#033;
 }
 
 
+/* Start Testimonials */
 
+.heading {
+    text-align: center;
+    color: #454343;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.white-heading{
+    color: #ffffff;
+}
+.heading:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(img/heading-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white-heading:after {
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.heading span {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+.white-heading span {
+    color: #ffffff;
+}
 /*-----Testimonial-------*/
 
 .testimonial:after {
@@ -433,13 +451,11 @@ line-height: 50px;
 .testimonial {
     min-height: 375px;
     position: relative;
-    /* background: url(); */
-    background: rgb(29, 29, 29);
+    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
         background-size: cover;
-    margin-bottom: 30px;
 }
 #testimonial4 .carousel-inner:hover{
   cursor: -moz-grab;
@@ -609,29 +625,3 @@ line-height: 50px;
     height: 35px;
 }
 /* ------testimonial  close-------*/
-
-.more_box{
-    padding: 40px;
-    background: #ddd;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.about_box{
-    padding: 40px;
-    text-align: left;
-}
-.more_box h2{
-    font-size: 22px;
-    padding: 30px 0;
-}
-.more_box h4{
-    font-size: 16px;
-    padding: 10px 0;
-}
-.about-box{
-    text-align: left;
-}
-.more_details{
-    padding: 40px;
-    text-align: left;
-}

@@ -34,6 +34,8 @@ export default function Header() {
       
       </>
       }
+      <Nav.Link href="/howitworks">How It Works</Nav.Link>
+      <Nav.Link href="/aboutus">AboutUs</Nav.Link>
       <Nav.Link href="/farms">Farms</Nav.Link>
       <NavDropdown title="Our Farms" id="basic-nav-dropdown">
           <NavDropdown.Item href="/farms?category=poultry">Poultry</NavDropdown.Item>
