@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function HomepageFunds() {
     return (
-        <section className='homepage-fund'>
+        <section className='homepage-fund grey_section'>
             <div className='container'>
-                <div className='card col-8 ' style={{border:"none", marginLeft:"230px"}} >
+                <div className='card'>
                    <div className='photo'>
                    <img
                     src="/returnsN.png"

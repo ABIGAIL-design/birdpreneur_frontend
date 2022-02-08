@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=montserrat:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,900&display=swap');
 
+
+a{
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
 body,h1,h2,p,h3,h4,h5,button{
     font-family: 'montserrat';
 }
@@ -16,6 +22,37 @@ text-align:left
 #responsive-navbar-nav{
     flex-direction: row-reverse;
 }
+.top_navigation{
+    /* background: #004444; */
+    min-width:500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    cursor: pointer;
+    /* display: block !important; */
+}
+.top_navigation{
+    padding: 40px 0;
+}
+.top_navigation .nav{
+    position: relative;
+}
+
+.nav_anchor{
+    display: none;
+}
+.top_navigation .nav .more_nav{
+    position: absolute;
+    top:25px;
+    background: #fff;
+    padding:5px;
+}
+
+.top_navigation .nav .more_nav .nav{
+    padding: 10px 30px;
+}
+
 
 .b_forms{
     width:400px;
@@ -150,8 +187,14 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
     background:url('https://www.birdpreneur.africa/static/images/chicks1.png');
     background-size:cover
 }
+section{
+    padding: 30px 0;
+}
 .halfed_section{
     text-align:left;
+}
+.grey_section{
+    background: #5cc2
 }
 .homepage-section{
     padding:40px;
@@ -192,6 +235,7 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 .card{
     border:none !important;
     box-shadow:none;
+    background: none !important;
 }
 .homepage-box  .card-img-overlay{
     margin-top: 100px;
@@ -201,6 +245,14 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
     height:100%;
     
     background-size:cover
+}
+.homepage-box{
+  margin-top: 10px !important;
+
+
+}
+.homepage-box .card{
+  border-radius:10px !important;
 }
 .homepage-box .poultry{
     background:url('https://www.birdpreneur.africa/static/images/chicks1.png');
@@ -237,11 +289,16 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
     
     height:100%;
 } */
+.list-group-item{
+    font-family: 'montserrat';
+}
+
 .list-group-item.active {
     z-index: 2;
-    color: #fff;
+    color: #fff !important;
     background-color: #1e2020 !important;
     border-color: #050e0a !important;
+    font-family: 'montserrat';
 }
 
 .card-title{
@@ -360,7 +417,8 @@ box-shadow:0px 2px 4px #0556;
 .top_header{
 height:60px;
 background: black;
-position:relative
+position:relative;
+
 }
 
 .top_header select{
@@ -634,4 +692,58 @@ line-height: 50px;
 .more_details{
     padding: 40px;
     text-align: left;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    /* .top_nav {
+        position: relative;
+    } */
+    .show{
+        display: block;
+    }
+
+    .hide{
+        display: none;
+    }
+    .top_navigation{
+        /* display: none; */
+        padding: 10px;
+        /* display: block; */
+        position: absolute;
+        right:0px;
+        background: #ddd;
+        min-width: 300px;
+        top:100px;
+        height: auto;
+    }
+
+    .top_navigation .nav{
+        padding:10px;
+    }
+
+    .top_navigation .nav .more_nav{ 
+        position: relative;
+        width:100%;
+        top:unset;
+        background: none;
+    }
+    
+    .nav_anchor{
+        display: block;
+        width:50px;
+        height: 50px;
+        /* background: #004444; */
+        right:20px;
+        top: 20px;
+        position: absolute;
+        cursor: pointer;
+        font-size: 30px;
+        line-height: 50px;
+    }
 }

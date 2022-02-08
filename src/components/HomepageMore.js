@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HomepageMore() {
     return (
-        <section className="homepage-section">
+        <section className="homepage-section grey_section">
              <div className='container'>
                 
                 <div className='row'>

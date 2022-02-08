@@ -7,7 +7,7 @@ import HomepageMore from '../components/HomepageMore'
 import HomepageConnect from '../components/HomepageConnect'
 import Investinfarm from '../components/Investinfarm'
 import Impact from '../components/Impact'
-import Testimony from '../components/Testimony'
+import Testimonials from '../components/Testimonials'
 import Help from '../components/Help'
 
 // import PageTitle from '../components/PageTitle'
@@ -22,7 +22,7 @@ export default function HomePage() {
             <HomepageMore />
             <Investinfarm/>
             <Impact/>
-            <Testimony />
+            <Testimonials />
             <Help/>
         </div>
     )

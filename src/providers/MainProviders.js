@@ -13,6 +13,7 @@ export default function MainProviders(props) {
     const [authTrigger, setAuthTrigger] = useState(0)
     const [conversionRate, setConversionRate] = useState({})
     const [displayCurrency, setDisplayCurrency] = useState("NGN")
+    const [farmFilter, setFarmFilter] = useState("")
     
     const auth = getAuth()
     const formatMoney = (amount, currency="NGN")=>{
@@ -91,6 +92,8 @@ export default function MainProviders(props) {
             displayCurrency, setDisplayCurrency,
             converter, 
             userProfile,
+            farmFilter, 
+            setFarmFilter
         }}
         >
             {props.children}

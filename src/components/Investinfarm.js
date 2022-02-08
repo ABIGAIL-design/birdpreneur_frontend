@@ -4,20 +4,20 @@ export default function Investinfarm() {
     return (
         <section className='Homepage-section'>
             
-            <div className="container" style={{  marginBottom:"50px", height:"400px", backgroundColor: "rgb(241, 238, 238)"}}>
+            <div className="container">
             <div className="farm">
              <h2 style={{marginBottom: "40px", paddingTop:"20px"}}>Invest in a Farm</h2>
 
             <div className="row">
-            <div className="col-5" style={{marginLeft: "70px", height: "130px"}}>
-              <div className="list-group" id="list-tab" role="tablist" >
+            <div className="col-sm-5 col-xs-12 mx-2 mt-3">
+              <div className="list-group" id="list-tab" role="tablist " >
                 <a className="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Select your farm</a>
                 <a className="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Invest & get returns</a>
                 <a className="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Watch your farm grow</a>
                 <a className="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Earn profits</a>
               </div>
             </div>
-            <div className="col-6 decisionText">
+            <div className="col-xs-12 col-sm-6 decisionText mx-2 mt-3">
               <div className="tab-content" id="nav-tabContent">
                 <div className="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                    <h5 style={{marginLeft: ""}}>Decide which farm you are interested in.</h5>

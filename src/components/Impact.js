@@ -4,7 +4,7 @@ export default function impact() {
     return (
         <section>
             
-            <div className="container" style={{ marginTop: "10%;"}}>
+            <div className="container" style={{ marginTop: "30px",  marginBottom: "40px",}}>
               <div className="row">
                 <div className="col-sm-6">
                   <div className="card">

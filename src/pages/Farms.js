@@ -9,7 +9,9 @@ import PageTitle from '../components/PageTitle';
 export default function Farms() {
     const {
         isAuthenticated,
-        formatMoney
+        formatMoney,
+        farmFilter, 
+        setFarmFilter
     } = useContext(mainFunctions)
     const db = getFirestore()
     const [allFarms, setAllFarms] = useState([])
@@ -41,6 +43,10 @@ export default function Farms() {
            setFarmCategory(category.toLowerCase()) 
         }
     },[])
+
+    useEffect(()=>{
+       setFarmCategory(farmFilter) 
+    },[farmFilter])
     
     useEffect(()=>{
         if(farmCategory !== ""){
