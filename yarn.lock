@@ -3522,6 +3522,11 @@
     "path-type" "^4.0.0"
     "yaml" "^1.10.0"
 
+"countup.js@^2.0.8":
+  "integrity" "sha512-pW3xwwD+hB+xmtI16xFcuLS0D5hSQqPQWkZOdgpKQyzxCquDNo2VCFPkRw12vmvdpnicXVTcjmYiakG6biwINg=="
+  "resolved" "https://registry.npmjs.org/countup.js/-/countup.js-2.0.8.tgz"
+  "version" "2.0.8"
+
 "cross-spawn@^7.0.2", "cross-spawn@^7.0.3":
   "integrity" "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w=="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
@@ -7721,6 +7726,13 @@
     "uncontrollable" "^7.2.1"
     "warning" "^4.0.3"
 
+"react-countup@^6.1.1":
+  "integrity" "sha512-9mYlnk/yCFg3g2/65pCTex6mr9h0eYdDMIL4T5nfLj/RzoiqY03wlPxZglzbJ6OzXvU37OmYApwQ4WMZNFr8Aw=="
+  "resolved" "https://registry.npmjs.org/react-countup/-/react-countup-6.1.1.tgz"
+  "version" "6.1.1"
+  dependencies:
+    "countup.js" "^2.0.8"
+
 "react-currency-input-field@^3.6.4":
   "integrity" "sha512-0SifhqMirGt5+inzHslfbf71ZYoBt420pkMM6oBSGS40CsuPcLIOV19B1LPSCz7dWPGYi/kw5TOFQ0qALrn6Wg=="
   "resolved" "https://registry.npmjs.org/react-currency-input-field/-/react-currency-input-field-3.6.4.tgz"
@@ -7880,7 +7892,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0-rc.1", "react@^16.9.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@17.0.2":
+"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0-rc.1", "react@^16.9.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>= 16.3.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

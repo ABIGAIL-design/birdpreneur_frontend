@@ -1,20 +1,37 @@
 import React from 'react'
-
+import CountUp from 'react-countup';
 export default function impact() {
     return (
-        <section>
+        <section style={{background:"#ccc", padding:"30px 0"}}>
             
-            <div className="container" style={{ marginTop: "30px",  marginBottom: "40px",}}>
+            <div className="container impact mb-4" style={{ 
+            
+            margin: "50px auto"}}>
               <div className="row">
                 <div className="col-sm-6">
                   <div className="card">
         
             <div className="card-body">
                 <h5 className="card-title" style={{marginLeft: "40px", marginBottom: "30px", color: "black"}}><b>INVESTORS</b></h5>
-                <h1 className="card-text" style={{marginLeft:"20px"}}> $900k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500</h1>           
-          
-                <h5 className="fs-6" style={{marginLeft: "20px"}}>INVESTED AMOUNT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MICROLENDERS</h5>
-            
+                <div className="row">
+                    <div className="col-6">
+                    <h1 className="card-text" style={{marginLeft:"40px"}}>
+                    $<CountUp
+                      end={900000} 
+                      duration={7}
+                    />
+                    </h1>
+                    <h5>Invested Amount</h5>
+                    </div>
+                    <div className="col-6">
+                      <h1 className="card-text" style={{marginLeft:"40px"}}>
+                      <CountUp
+                        end={500}  
+                      />
+                      </h1>
+                      <h5>Micro Lenders</h5>
+                    </div>
+                  </div>
             </div>
          
         
@@ -24,10 +41,27 @@ export default function impact() {
               <div className="card" >
                 <div  className="card-body">
                   <h5 className="card-title" style={{marginLeft: "40px", marginBottom: "30px", color: "black"}}><b>FARMERS</b></h5>
-                  <h1 className="card-text" style={{marginLeft:"40px"}}> 10000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1700</h1>           
+                  <div className="row">
+                    <div className="col-6">
+                    <h1 className="card-text" style={{marginLeft:"40px"}}>
+                    <CountUp
+                      end={10000}  
+                    />
+                    </h1>
+                    <h5>Farmers Empowered</h5>
+                    </div>
+                    <div className="col-6">
+                      <h1 className="card-text" style={{marginLeft:"40px"}}>
+                      <CountUp
+                        end={25000}  
+                      />
+                      </h1>
+                      <h5>Youths Empowered</h5>
+                    </div>
+                  </div>
+                            
                 
-                  <h5 className="fs-6" style={{marginLeft: "40px"}}>FARMERS EMPOWERED &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; YOUTHS EMPOWERED</h5>
-                </div>
+                 </div>
               </div>
             </div>
           </div>
