@@ -23,7 +23,7 @@ text-align:left
     flex-direction: row-reverse;
 }
 .top_navigation{
-    /* background: #004444; */
+    /* background: #ec5353; */
     min-width:500px;
     height: 100px;
     display: flex;
@@ -69,10 +69,11 @@ table tbody{
 font-size:10px;
 }
 .btn-primary{
-    background: #044 !important;
+    background: #ec5353 !important;
+    border:none !important;
 }
 .btn-primary:hover{
-    background: #022 !important;
+    background: #472728 !important;
 }
 label{
     font-family: 'montserrat';
@@ -157,7 +158,7 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 
 /* footer */
 .page-footer{
-    background:#044;
+    background:#ec5353;
     color:#fff;
 }
 
@@ -168,7 +169,7 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 /* page_title */
 /* pagetitle_wrapper{
     height:250px;
-    background:#004444;
+    background:#ec5353;
     padding: 120px;
 } */
 .page_title{ 
@@ -177,14 +178,14 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
     font-family:'montserrat';
     text-align:center;
     font-weight:500;
-    color:#004444;
+    color:#ec5353;
     margin-bottom: 20px;
 }
 
 .hero{
     width: 100%;
     height: calc(100vh - 200px);
-    background:url('https://www.birdpreneur.africa/static/images/chicks1.png');
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1641318746/chicks1_gxxjht.png');
     background-size:cover
 }
 section{
@@ -194,7 +195,7 @@ section{
     text-align:left;
 }
 .grey_section{
-    background: #5cc2
+    background: #ec535322
 }
 .homepage-section{
     padding:40px;
@@ -212,7 +213,7 @@ section{
 }
 
 .homepage-img h4{
-    /* background: #055; */
+    /* background: #ec5353; */
     height: 30px;
     font-weight:600;
     font-size:20px
@@ -261,22 +262,27 @@ section{
     background-position: center;
 }
 
+
+
+
+
+
 .homepage-box .goat{
-    background:url('https://www.birdpreneur.africa/static/images/goat.jpg');
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425927/goat_bzw15s.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .homepage-box .maize{
-    background:url('https://www.birdpreneur.africa/static/images/maizefarm2.jpeg');
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425760/maize_fyfxqz.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .homepage-box .soya{
-    background:url('https://www.birdpreneur.africa/static/images/soyabeans.jpg');
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1641318693/soya2_psqwgs.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -296,8 +302,8 @@ section{
 .list-group-item.active {
     z-index: 2;
     color: #fff !important;
-    background-color: #1e2020 !important;
-    border-color: #050e0a !important;
+    background-color: #ec5353 !important;
+    /* border-color: # !important; */
     font-family: 'montserrat';
 }
 
@@ -394,7 +400,7 @@ color: white}
 width: 300px;
 height: 90%;
 text-align: left;
-background: #055;
+background: #ec5353;
 margin: 10px;
 float: left;
 flex: 0 0 auto;
@@ -402,7 +408,7 @@ color:#fff;
 font-family:'montserrat';
 border-radius: 10px;
 padding: 40px;
-box-shadow:0px 2px 4px #0556;
+box-shadow:0px 2px 4px #ec53536;
 }
 .investment_box.dumb{
     background: #ddd !important;
@@ -416,7 +422,7 @@ box-shadow:0px 2px 4px #0556;
 }
 .top_header{
 height:60px;
-background: black;
+background: #ec5353;
 position:relative;
 
 }
@@ -442,7 +448,7 @@ font-family: "montserrat";
 font-size:20px;
 position:absolute;
 left:10px;
-color:#044;
+color:#ec5353;
 line-height: 40px;
 }
 
@@ -738,7 +744,7 @@ line-height: 50px;
         display: block;
         width:50px;
         height: 50px;
-        /* background: #004444; */
+        /* background: #ec5353; */
         right:20px;
         top: 20px;
         position: absolute;
