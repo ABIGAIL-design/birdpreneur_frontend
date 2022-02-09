@@ -35,30 +35,7 @@ export default function Header() {
   <div className={`top_navigation ${showNav ? "show": "hide"}`}>
 
 
-  {!isAuthenticated &&
-    <div className="nav">
-          <div className="title" onClick={()=>{ 
-            if(showMore !== 'farms')  
-              setShowMore('login')
-            else
-              setShowMore('')
-          }}>Login / Register</div>
-          {showMore === 'login' &&
-            <div className="more_nav">
-              <div className="nav">
-                <Link to="/login">
-                  Login
-                </Link>  
-              </div>
-              <div className="nav">
-                <Link to="/register">
-                Register
-                </Link>  
-              </div>
-            </div>
-          }
-    </div>
-  }
+  
 
     {isAuthenticated &&
     <>
@@ -132,6 +109,21 @@ export default function Header() {
         How It Works
       </Link>  
     </div>
+    
+    {!isAuthenticated &&
+    <>
+    <div className="nav">
+      <Link to="/register">
+       Register
+      </Link>
+    </div>
+    <div className="nav">
+      <Link to="/login">
+        Login
+      </Link>
+    </div>
+    </>
+  }
     {isAuthenticated &&
     <div
       onClick={()=>{
