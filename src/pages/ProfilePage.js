@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 // import AccountSidebar from '../components/AccountSidebar';
 import { mainFunctions } from "../providers/MainProviders";
-import PageTitle from '../components/PageTitle'
+import PageTitle from '../components/PageTitle2'
 import SectionHeader from '../components/SectionHeader'
 import {doc, updateDoc, getFirestore } from "firebase/firestore";
 // import ImageUpload from 'image-upload-react'

@@ -4,7 +4,7 @@ import PaystackButtonComponent from '../components/PaystackButtonComponent';
 
 import {mainFunctions} from "../providers/MainProviders"
 import { Link } from 'react-router-dom';
-import PageTitle from '../components/PageTitle';
+import PageTitle from '../components/PageTitle2';
 
 export default function Farms() {
     const {

@@ -54,6 +54,7 @@ export default function Login() {
                     }
                     <label htmlFor="username">Email</label>
                     <input className='b_input form-control' name="email"
+                    placeholder='email'
                 onChange={(e)=>{
                     handleChange(e)
                 }}
@@ -61,6 +62,7 @@ export default function Login() {
 
                     <label htmlFor="username">Password</label>
                     <input className='b_input form-control' name="password" type="password"
+                    placeholder='password'
                     onChange={(e)=>{
                         handleChange(e)
                     }}
@@ -72,12 +74,11 @@ export default function Login() {
                         signIn()
                     }}
                     >Submit</button>
+                    <div><small><Link to="/forgot">Forgot Password?</Link></small></div>
                 </form>
                 
                 <div>
-                <small>
-                    <Link to="/forgot">Forgot Password</Link>
-                </small>
+                    
                 </div>
             </div>
         </div>

@@ -80,6 +80,7 @@ export default function Register() {
                     }
                     <label htmlFor="username">Email</label>
                     <input className='b_input form-control' name="email" type="text"
+                    placeholder='email'
                     onChange={(e)=>{
                         handleChange(e)
                     }}
@@ -87,6 +88,7 @@ export default function Register() {
 
                     <label htmlFor="username">Password</label>
                     <input className='b_input form-control' name="password" type="password"
+                    placeholder='password'
                     onChange={(e)=>{
                         handleChange(e)
                     }}
@@ -94,6 +96,7 @@ export default function Register() {
 
                     <label htmlFor="username"> Confirm Password</label>
                     <input className='b_input form-control' name="confirm_password" type="password"
+                    placeholder='confirm password'
                     onChange={(e)=>{
                         handleChange(e)
                     }}

@@ -35,22 +35,24 @@ function App() {
       <Countries />
         <Header />
         {/* <AddOne /> */}
-        <Routes>
-          {/* My Routes comes here */}
-          <Route exact path="/" element={<HomePage/>}/>
-          <Route exact path="/aboutus" element={<AboutUs />}/>
-          <Route exact path="/howitworks" element={<HowItWorks />}/>
-          <Route exact path="/login" element={ isAuthenticated ? <Dashboard/> : <Login/>}/>
-          <Route exact path="/forgot" element={ isAuthenticated ? <Dashboard/> : <ForgotPassword/>}/>
-          <Route exact path="/register" element={ isAuthenticated ? <Dashboard/> : <Register/>}/>
-          <Route exact path="/dashboard" element={ isAuthenticated ? <Dashboard/> : <Login/>}/>
-          <Route exact path="/withdraw" element={ isAuthenticated ? <Withdraw/> : <Login/>}/>
-          <Route exact path="/account" element={ isAuthenticated ? <ProfilePage/> : <Login/>}/>
-          
-          <Route exact path="/farms" element={ <Farms/> } />
-       
-        </Routes>
 
+        <div className='route'>
+          <Routes>
+            {/* My Routes comes here */}
+            <Route exact path="/" element={<HomePage/>}/>
+            <Route exact path="/aboutus" element={<AboutUs />}/>
+            <Route exact path="/howitworks" element={<HowItWorks />}/>
+            <Route exact path="/login" element={ isAuthenticated ? <Dashboard/> : <Login/>}/>
+            <Route exact path="/forgot" element={ isAuthenticated ? <Dashboard/> : <ForgotPassword/>}/>
+            <Route exact path="/register" element={ isAuthenticated ? <Dashboard/> : <Register/>}/>
+            <Route exact path="/dashboard" element={ isAuthenticated ? <Dashboard/> : <Login/>}/>
+            <Route exact path="/withdraw" element={ isAuthenticated ? <Withdraw/> : <Login/>}/>
+            <Route exact path="/account" element={ isAuthenticated ? <ProfilePage/> : <Login/>}/>
+            
+            <Route exact path="/farms" element={ <Farms/> } />
+        
+          </Routes>
+        </div>
         <Footer />
       </div>
       

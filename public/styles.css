@@ -6,17 +6,60 @@ a{
     color: #000 !important;
 }
 
-body,h1,h2,p,h3,h4,h5,button{
+body,h1,h2,p,h3,h4,h5,button, .btn{
     font-family: 'montserrat';
 }
+section{
+    padding: 50px 0 !important;
+}
 p{
-    font-size:18px !important;
+    font-size:16px !important;
     line-height: 26px !important;
     margin-top:20px !important;
 }
+.route{
+    min-height: calc(100vh - 440px);
+}
+.mission_section{
+    max-width: 400px;
+    margin: 40px auto;
+}
+.mission_section .icon{
+    font-size: 16;
+}
+.tab_title{
+    
+    background: #e7f1ff;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px #472728;
+    margin: 5px;
+
+    
+}
+.tab_title h4{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 30px;
+    margin: 0;
+}
+.tab_body{
+    font-family: 'Montserrat';
+    padding:10px;
+    margin:2px;
+}
+
+
 h1{
 font-weight:600;
-font-size:25px !important
+font-size:25px !important;
+}
+h4{
+    font-size: 22px !important;
+    line-height: 30px;
+    font-weight: 600 !important;
 }
 .decisionText{
 text-align:left
@@ -63,12 +106,28 @@ text-align:left
     font-family: 'montserrat';
     margin:40px auto 40px;
 }
+.b_forms .btn{
+    margin-left: 0 !important;
+    width:100% !important;
+    max-width: 100%;
+}
+.b_forms label{
+    font-size: 12px;
+    font-weight: 500;
+}
+.b_forms input{
+    font-size: 12px;
+}
 table{
     font-family: 'montserrat';
     text-align: left;
 }
 table tbody{
 font-size:10px;
+}
+.btn{
+    max-width: 150px;
+    font-weight: 600 !important;
 }
 .btn-primary{
     background: #ec5353 !important;
@@ -162,6 +221,7 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 .page-footer{
     background:#ec5353;
     color:#fff;
+    font-family: 'Montserrat';
 }
 
 .black-text{
@@ -169,20 +229,33 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 }
 
 /* page_title */
-/* pagetitle_wrapper{
+.pagetitle_wrapper{
     height:250px;
-    background:#ec5353;
-    padding: 120px;
-} */
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425927/goat_bzw15s.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
 .page_title{ 
     text-transform: capitalize;
     font-size:40px;
     font-family:'montserrat';
     text-align:center;
     font-weight:500;
-    color:#ec5353;
+    color:#fff;
+    padding: 75px;
     margin-bottom: 20px;
 }
+
+
+.pagetitle_wrapper2{
+    height:250px;
+}
+
+.pagetitle_wrapper2 .page_title{
+    color: #ec5353;
+}
+
 
 .hero{
     width: 100%;
@@ -207,6 +280,7 @@ section{
     font-family: 'montserrat';
     font-size:30px;
     padding:80px 10px;
+    line-height: 50px !important;
 
 }
 .homepage-box{
@@ -251,17 +325,20 @@ section{
 }
 .homepage-box{
   margin-top: 10px !important;
-
-
 }
 .homepage-box .card{
-  border-radius:10px !important;
+  border-top-left-radius:20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.homepage-box .card .hero_gradient{
+    border-top-left-radius:20px !important;
+    border-bottom-right-radius: 20px !important;
 }
 .homepage-box .poultry{
-    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1641318746/chicks1_gxxjht.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1641318746/chicks1_gxxjht.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 
@@ -277,24 +354,24 @@ https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425927/goat_bzw15s.jpg
 
 
 .homepage-box .goat{
-    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425927/goat_bzw15s.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425927/goat_bzw15s.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .homepage-box .maize{
-    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425760/maize_fyfxqz.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425760/maize_fyfxqz.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .homepage-box .soya{
-    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1641318693/soya2_psqwgs.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background:url('https://res.cloudinary.com/dyv5h7hdy/image/upload/v1641318693/soya2_psqwgs.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 
@@ -308,12 +385,12 @@ https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425927/goat_bzw15s.jpg
     font-family: 'montserrat';
 }
 
-.list-group-item.active {
+.list-group-item.active{
     z-index: 2;
     color: #fff !important;
     background-color: #ec5353 !important;
-    /* border-color: # !important; */
     font-family: 'montserrat';
+    border-color: #ec5353 !important; 
 }
 
 .card-title{
@@ -337,7 +414,7 @@ color: white}
     
 }
 .photo{
-    width: 20%;
+    width: 100px;
     padding: 10px;
     margin: auto;
 }
@@ -511,8 +588,8 @@ line-height: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
-        background-size: cover;
-    margin-bottom: 30px;
+    background-size: cover;
+    /* margin-bottom: 30px; */
 }
 #testimonial4 .carousel-inner:hover{
   cursor: -moz-grab;
@@ -681,13 +758,39 @@ line-height: 50px;
     width: 35px;
     height: 35px;
 }
+/* Impact */
+.impact{
+    background: #ec535322;
+}
+.impact h1{
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    width: 100%;
+    /* background: #9dd3af; */
+
+}
+
+
+.impact h5{
+    text-align: center;
+    width: 100%;
+    /* background: #9dd3af; */
+
+
+}
+
+
+
+
+
 /* ------testimonial  close-------*/
 
 .more_box{
     padding: 40px;
-    background: #ddd;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    background: #ec535322;
+    /* border-radius: 10px; */
+    /* margin-bottom: 20px; */
 }
 .about_box{
     padding: 40px;
@@ -711,9 +814,66 @@ line-height: 50px;
 
 
 
+.opening_icon{
+    width: 70px;
+    height: 70px;
+    background: #000;
+    margin: auto;
+}
 
+.select_offer{
+    background: url('icons/offerN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.invest_offer{
+    background: url('icons/investN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.grow_offer{
+    background: url('icons/growN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.earn_offer{
+    background: url('icons/earnN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.produce_icon{
+    background: url('icons/produceN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.partnership_icon{
+    background: url('icons/partnershipN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.distribution_icon{
+    background: url('icons/distriN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.production_icon{
+    background: url('icons/investN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 @media only screen and (max-width: 800px) {
     /* .top_nav {

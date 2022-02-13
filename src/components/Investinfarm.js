@@ -6,9 +6,9 @@ export default function Investinfarm() {
             
             <div className="container">
             <div className="farm">
-             <h2 style={{marginBottom: "40px", paddingTop:"20px"}}>Invest in a Farm</h2>
+             <h2>Invest in a Farm</h2>
 
-            <div className="row">
+            <div className="row mt-5">
             <div className="col-sm-5 col-xs-12 mx-2 mt-3">
               <div className="list-group" id="list-tab" role="tablist " >
                 <a className="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Select your farm</a>

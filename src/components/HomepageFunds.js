@@ -20,7 +20,7 @@ export default function HomepageFunds() {
                               
                          </p>
                    
-                         <button className="b_btn btn btn-primary">Learn More</button>
+                         <button className="b_btn btn btn-primary mt-4 mb-4">Learn More</button>
                 </div>
 
             </div>
