@@ -5,6 +5,8 @@ import PaystackButtonComponent from '../components/PaystackButtonComponent';
 import {mainFunctions} from "../providers/MainProviders"
 import { Link } from 'react-router-dom';
 import PageTitle from '../components/PageTitle2';
+import ProductsDetails from '../components/ProductsDetails';
+import FarmDetails from '../components/FarmDetails';
 
 export default function Farms() {
     const {
@@ -109,7 +111,11 @@ export default function Farms() {
                   </div>  
                 )
             })}
+            
         </div>
+
+        {/* <ProductsDetails /> */}
+        <FarmDetails />
         </div>
     )
 }

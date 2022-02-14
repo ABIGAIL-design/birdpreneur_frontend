@@ -145,7 +145,7 @@ export default function Header() {
   onClick={()=>{
     setShowNav(!showNav)
   }}>
-    <i class="fas fa-bars"></i>
+    <i className="fas fa-bars"></i>
   </div>
 </Navbar>
        

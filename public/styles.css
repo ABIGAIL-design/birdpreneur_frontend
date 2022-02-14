@@ -880,11 +880,41 @@ line-height: 50px;
     background-repeat: no-repeat;
     background-position: center;
 }
+.farm_details_titles{
+    font-family: 'Montserrat';
+    padding:10px;
+    margin-top: 40px !important;
+}
 
+.farm_details_titles .this_title{
+    cursor: pointer;
+    padding:10px;
+}
+
+.farm_details_titles .this_title:hover{
+    /* cursor: pointer; */
+    background: #ec535322;
+}
+.farm_details_titles .this_title.active{
+    /* cursor: pointer; */
+    background: #ec5353;
+    color: #fff;
+}
+
+.farm_details_body{
+    font-family: 'Montserrat';
+    background: #ec535322;
+    padding:20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
 @media only screen and (max-width: 800px) {
     /* .top_nav {
         position: relative;
     } */
+    section{
+        padding: 20px 5px !important
+    }
     .show{
         display: block;
     }
