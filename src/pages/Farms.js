@@ -86,10 +86,13 @@ export default function Farms() {
 
                         </div>
                         <div className="details float-left">
-                      <h3>{thisfarm.name}</h3>
                       <p>Location: {thisfarm.location}</p>
-                      <p>Price: {formatMoney(thisfarm.price)}</p
-                      >
+                      <p>Price: {formatMoney(thisfarm.price)}</p>
+                      <p>Farmers: {thisfarm.farmers}</p>
+                      <p>Size: {thisfarm.size}</p>
+                      <p>Employees: {thisfarm.employees} Youths</p>
+                      <p>Invest units: {thisfarm.units}</p>
+                      <p>ROI: {thisfarm.roi}% (Fixed)</p>
                         {!isAuthenticated &&
                         <span>
                             <Link to="/login">
