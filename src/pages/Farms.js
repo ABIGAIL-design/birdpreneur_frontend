@@ -11,12 +11,14 @@ export default function Farms() {
         isAuthenticated,
         formatMoney,
         farmFilter, 
-        setFarmFilter
+        setFarmFilter,
+        farmCategory, 
+        setFarmCategory
     } = useContext(mainFunctions)
     const db = getFirestore()
     const [allFarms, setAllFarms] = useState([])
     const [filteredFarms, setFilteredFarms] = useState([])
-    const [farmCategory, setFarmCategory] = useState("")
+    
     // [{name:Oyo Farms, location:Oyo},{name:Ogun Farms, location:Ogun}]
     // {}
 
@@ -38,7 +40,6 @@ export default function Farms() {
         const search = window.location.search
         const params = new URLSearchParams(search)
         var category = params.get('category')
-        
         if(typeof category !== "undefined" && category !== null){
            setFarmCategory(category.toLowerCase()) 
         }

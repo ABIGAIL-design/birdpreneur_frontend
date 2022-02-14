@@ -9,7 +9,8 @@ export default function Header() {
     setAuthTrigger,
     authTrigger,
     farmFilter, 
-    setFarmFilter
+    setFarmFilter,
+    setFarmCategory
   }  = useContext(mainFunctions)
 
   const [showMore, setShowMore] = useState("")
@@ -63,6 +64,7 @@ export default function Header() {
           <div className="nav" 
             onClick={()=>{
               setFarmFilter('poultry')
+              // setFarmCategory("poultry")
             }}>
             <Link to="/farms?category=poultry">
             Poultry
@@ -71,6 +73,7 @@ export default function Header() {
           <div className="nav"
           onClick={()=>{
             setFarmFilter('maize')
+            // setFarmCategory("poultry")
           }}>
             <Link to="/farms?category=maize">
             Maize

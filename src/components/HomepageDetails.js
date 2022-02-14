@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
+import {mainFunctions} from "../providers/MainProviders"
 
 export default function HomepageDetails() {
+    const {
+        setFarmFilter
+    } = useContext(mainFunctions)
     return (
         <section className="homepage-section">
              <div className='container'>
@@ -12,7 +16,10 @@ export default function HomepageDetails() {
                 <div className="card poultry">
                     <div className="hero_gradient p-2">
                         <div  className="card-img-overlay">
-                        <Link to="/farms?category=poultry">
+                        <Link to="/farms?category=poultry"  onClick={()=>{
+                            setFarmFilter("poultry")
+                            console.log("poultry")
+                        }}>
                             <button type="button" className="btn btn-danger" >
                             <b>Poultry Farm</b></button>
                          </Link>
@@ -27,7 +34,7 @@ export default function HomepageDetails() {
               <div className="card goat">
                   <div className="hero_gradient p-2">
                       <div className="card-img-overlay">
-                      <Link to="/farms?category=goat">
+                      <Link to="/farms?category=goat" onClick={()=>setFarmFilter("goat")}>
                       <button type="button" className="btn btn-danger" ><b>Goat Farm</b></button>
                       </Link>
                       <h4 className="card-title pt-2 " >16% ROI</h4>
@@ -43,7 +50,7 @@ export default function HomepageDetails() {
               <div className="hero_gradient p-4">
             
               <div className="card-img-overlay">
-              <Link to="/farms?category=maize">
+              <Link to="/farms?category=maize" onClick={()=>setFarmFilter("maize")}>
               <button type="button" className="btn btn-danger" ><b>Maize Farm</b></button>
               </Link>
               <h4 className="card-title  pt-2" >15-28% ROI</h4>
@@ -57,7 +64,7 @@ export default function HomepageDetails() {
               <div className="card soya">
               <div className="hero_gradient p-4">
               <div className="card-img-overlay">
-              <Link to="/farms?category=soyabeans">
+              <Link to="/farms?category=soyabeans"  onClick={()=>setFarmFilter("soyabeans")}>
               <button type="button" className="btn btn-danger" ><b>Soyabeans Farm</b></button>
               </Link>
             <h4 className="card-title pt-2" >16% ROI</h4>

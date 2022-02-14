@@ -14,6 +14,7 @@ export default function MainProviders(props) {
     const [conversionRate, setConversionRate] = useState({})
     const [displayCurrency, setDisplayCurrency] = useState("NGN")
     const [farmFilter, setFarmFilter] = useState("")
+    const [farmCategory, setFarmCategory] = useState("")
     
     const auth = getAuth()
     const formatMoney = (amount, currency="NGN")=>{
@@ -93,7 +94,9 @@ export default function MainProviders(props) {
             converter, 
             userProfile,
             farmFilter, 
-            setFarmFilter
+            setFarmFilter,
+            farmCategory, 
+            setFarmCategory
         }}
         >
             {props.children}
