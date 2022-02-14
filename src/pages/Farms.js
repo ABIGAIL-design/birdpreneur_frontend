@@ -79,25 +79,26 @@ export default function Farms() {
                         <div className="image"
                         style={{
                             background:"url("+thisfarm.img+")",
-                            backgroundSize:"100%",
-                            backgroundPosition:"center"
+                            backgroundSize:"cover",
+                            backgroundPosition:"center",
+                            backgroundRepeat:"no-repeat"
 
                         }}
                         >
 
                         </div>
                         <div className="details float-left">
-                      <p>Location: {thisfarm.location}</p>
-                      <p>Price: {formatMoney(thisfarm.price)}</p>
-                      <p>Farmers: {thisfarm.farmers}</p>
-                      <p>Size: {thisfarm.size}</p>
-                      <p>Employees: {thisfarm.employees} Youths</p>
-                      <p>Invest units: {thisfarm.units}</p>
-                      <p>ROI: {thisfarm.roi}% (Fixed)</p>
+                      <p><strong>Location:</strong> {thisfarm.location}</p>
+                      <p><strong>Price:</strong> {formatMoney(thisfarm.price)}</p>
+                      <p><strong>Farmers:</strong> {thisfarm.farmers}</p>
+                      <p><strong>Size:</strong> {thisfarm.size}</p>
+                      <p><strong>Employees:</strong> {thisfarm.employees} Youths</p>
+                      <p><strong>Invest units:</strong> {thisfarm.units}</p>
+                      <p><strong>ROI: </strong>{thisfarm.roi}% (Fixed)</p>
                         {!isAuthenticated &&
                         <span>
-                            <Link to="/login">
-                            <button className='btn btn-primary'>Login to Invest</button>
+                            <Link to="/register">
+                            <button className='btn btn-primary'>Invest Now</button>
                             </Link>
                         </span>
                         }

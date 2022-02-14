@@ -103,7 +103,7 @@ text-align:left
 
 
 .b_forms{
-    width:400px;
+    width:350px;
     padding:20px;
     /* background: #dfdfdf; */
     font-family: 'montserrat';
@@ -469,7 +469,9 @@ color: white}
     height:300px;
     float:left;
     border-radius:10px;
+    background-size: cover;
 }
+
 .farm_list_box .inner .details{
     width:45%;
     text-align:left;
@@ -911,6 +913,14 @@ line-height: 50px;
         width:100%;
         top:unset;
         background: none;
+    }
+    .farm_list_box .image{
+        width:100% !important
+    }
+    .farm_list_box .details{
+        width:100% !important;
+        padding:0 !important;
+        
     }
     
     .nav_anchor{
