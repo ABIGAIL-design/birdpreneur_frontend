@@ -72,7 +72,7 @@ export default function Farms() {
         <div className=''>
             {filteredFarms.map((thisfarm, index)=>{
                 return(
-                  <div key={index} className='farm_list_box row'>
+                  <div key={index} className='farm_list_box row mt-3 mb-3'>
                       <div className='inner'>
 
                         <div className="image"
