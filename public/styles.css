@@ -41,6 +41,10 @@ p{
 
     
 }
+.tab_title.active{
+    background-color: #ec5353 !important;
+    color:#fff;
+}
 .tab_title h4{
     font-family: 'Montserrat';
     font-weight: 600;

@@ -6,7 +6,7 @@ export default function MissionBoard() {
   return (
     <section className='mission_section'>
         <div>
-            <div className="tab_title"
+            <div className={`tab_title ${showTab === 1 ? "active" : ""}`}
             onClick={()=>
                 {
                     if(showTab !== 1)
@@ -22,7 +22,7 @@ export default function MissionBoard() {
             }
         </div>
         <div>
-            <div className="tab_title"
+            <div className={`tab_title ${showTab === 2 ? "active" : ""}`}
             onClick={()=>
                 {
                     if(showTab !== 2)
@@ -36,7 +36,7 @@ export default function MissionBoard() {
             }
         </div>
         <div>
-            <div className="tab_title"
+            <div className={`tab_title ${showTab === 3 ? "active" : ""}`}
             onClick={()=>
                 {
                     if(showTab !== 3)
@@ -51,7 +51,7 @@ export default function MissionBoard() {
             }
         </div>
         <div>
-            <div className="tab_title"
+            <div className={`tab_title ${showTab === 4 ? "active" : ""}`}
             onClick={()=>
                 {
                     if(showTab !== 4)
