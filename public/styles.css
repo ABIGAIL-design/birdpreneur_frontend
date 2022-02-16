@@ -10,15 +10,16 @@ body,h1,h2,p,h3,h4,h5,button, .btn{
     font-family: 'montserrat';
 }
 .navbar{
-    border-bottom: solid 0.1em #ec5353 !important;
+    border-bottom: solid 0.1em #96281b !important;
 }
 section{
     padding: 50px 0 !important;
 }
 p{
-    font-size:16px !important;
-    line-height: 26px !important;
+    font-size:20px !important;
+    line-height: 28px !important;
     margin-top:20px !important;
+    text-align: left;
 }
 .route{
     min-height: calc(100vh - 440px);
@@ -42,7 +43,7 @@ p{
     
 }
 .tab_title.active{
-    background-color: #ec5353 !important;
+    background-color: #96281b !important;
     color:#fff;
 }
 .tab_title h4{
@@ -75,7 +76,7 @@ text-align:left
     flex-direction: row-reverse;
 }
 .top_navigation{
-    /* background: #ec5353; */
+    /* background: #96281b; */
     min-width:500px;
     height: 100px;
     display: flex;
@@ -89,6 +90,8 @@ text-align:left
 }
 .top_navigation .nav{
     position: relative;
+    font-size:14px;
+
 }
 
 .nav_anchor{
@@ -137,7 +140,7 @@ font-size:10px;
     font-weight: 600 !important;
 }
 .btn-primary{
-    background: #ec5353 !important;
+    background: #96281b !important;
     border:none !important;
 }
 .btn-primary:hover{
@@ -226,7 +229,7 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 
 /* footer */
 .page-footer{
-    background:#ec5353;
+    background:#96281b;
     color:#fff;
     font-family: 'Montserrat';
 }
@@ -260,7 +263,7 @@ https://res.cloudinary.com/farmz2u/image/upload/v1640336404/Birdpreneur/birdpren
 }
 
 .pagetitle_wrapper2 .page_title{
-    color: #ec5353;
+    color: #96281b;
 }
 
 
@@ -277,7 +280,7 @@ section{
     text-align:left;
 }
 .grey_section{
-    background: #ec535322
+    background: #96281b22
 }
 .homepage-section{
     padding:40px;
@@ -296,7 +299,7 @@ section{
 }
 
 .homepage-img h4{
-    /* background: #ec5353; */
+    /* background: #96281b; */
     height: 30px;
     font-weight:600;
     font-size:20px
@@ -395,9 +398,9 @@ https://res.cloudinary.com/dyv5h7hdy/image/upload/v1644425927/goat_bzw15s.jpg
 .list-group-item.active{
     z-index: 2;
     color: #fff !important;
-    background-color: #ec5353 !important;
+    background-color: #96281b !important;
     font-family: 'montserrat';
-    border-color: #ec5353 !important; 
+    border-color: #96281b !important; 
 }
 
 .card-title{
@@ -463,7 +466,7 @@ color: white}
     width:100%;
     height:100%;
     /* background: #dfdfdf; */
-    background: #ec535322;
+    background: #96281b22;
     border-radius: 10px;
     padding:20px;
     font-family: 'montserrat';
@@ -496,7 +499,7 @@ color: white}
 width: 300px;
 height: 90%;
 text-align: left;
-background: #ec5353;
+background: #96281b;
 margin: 10px;
 float: left;
 flex: 0 0 auto;
@@ -504,7 +507,7 @@ color:#fff;
 font-family:'montserrat';
 border-radius: 10px;
 padding: 40px;
-box-shadow:0px 2px 4px #ec5353;
+box-shadow:0px 2px 0px #ccc;
 }
 .investment_box.dumb{
     background: #ddd !important;
@@ -518,7 +521,7 @@ box-shadow:0px 2px 4px #ec5353;
 }
 .top_header{
 height:60px;
-background: #ec5353;
+background: #96281b;
 position:relative;
 
 }
@@ -544,7 +547,7 @@ font-family: "montserrat";
 font-size:20px;
 position:absolute;
 left:10px;
-color:#ec5353;
+color:#96281b;
 line-height: 40px;
 }
 
@@ -770,7 +773,7 @@ line-height: 50px;
 }
 /* Impact */
 .impact{
-    background: #ec535322;
+    background: #96281b22;
 }
 .impact h1{
     font-size: 30px !important;
@@ -798,7 +801,7 @@ line-height: 50px;
 
 .more_box{
     padding: 40px;
-    background: #ec535322;
+    background: #96281b22;
     /* border-radius: 10px; */
     /* margin-bottom: 20px; */
 }
@@ -806,6 +809,7 @@ line-height: 50px;
     padding: 40px;
     text-align: left;
 }
+
 .more_box h2{
     font-size: 22px;
     padding: 30px 0;
@@ -814,7 +818,11 @@ line-height: 50px;
     font-size: 16px;
     padding: 10px 0;
 }
-.about-box{
+.about_box{
+    text-align: center;
+}
+.about_box h4{
+    font-size: 28px !important;
     text-align: left;
 }
 .more_details{
@@ -897,21 +905,38 @@ line-height: 50px;
 
 .farm_details_titles .this_title:hover{
     /* cursor: pointer; */
-    background: #ec535322;
+    background: #96281b22;
 }
 .farm_details_titles .this_title.active{
     /* cursor: pointer; */
-    background: #ec5353;
+    background: #96281b;
     color: #fff;
 }
 
 .farm_details_body{
     font-family: 'Montserrat';
-    background: #ec535322;
+    background: #96281b22;
     padding:20px;
     margin-bottom: 40px;
     text-align: left;
 }
+.allfarms img{
+    height: 300px !important;
+    object-fit: cover;
+    border-top-left-radius:20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.allfarms h5{
+    color:#000;
+    font-size: 16px;
+    line-height: 26px;
+}
+.allfarms button{
+    margin:20px;
+}
+
+
 @media only screen and (max-width: 800px) {
     /* .top_nav {
         position: relative;
@@ -961,7 +986,7 @@ line-height: 50px;
         display: block;
         width:50px;
         height: 50px;
-        /* background: #ec5353; */
+        /* background: #96281b; */
         right:20px;
         top: 20px;
         position: absolute;

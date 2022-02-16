@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="col-md-12 mt-md-0 mt-3">
         <div className='logo_white'></div>
         <h5 className="text-uppercase">Birdpreneur</h5>
-        <p>High yields from skilled farmers.</p>
+        <div>High yields from skilled farmers.</div>
 
       </div>
       

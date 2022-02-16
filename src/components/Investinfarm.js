@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 export default function Investinfarm() {
     return (
         <section className='Homepage-section'>
@@ -36,7 +36,7 @@ export default function Investinfarm() {
           </div>
 
           <div className="button" style={{marginTop: "100px", marginLeft: "40px"}}>
-            <a href="/farms "><button className="b_btn btn btn-primary">Browse Farms</button></a>
+            <Link to="allfarms"><button className="b_btn btn btn-primary">Browse Farms</button></Link>
           </div>
 
         </div>

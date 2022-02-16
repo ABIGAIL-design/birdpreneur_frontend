@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 export default function HomepageFunds() {
     return (
         <section className='homepage-fund grey_section'>
@@ -20,7 +20,7 @@ export default function HomepageFunds() {
                               
                          </p>
                    
-                         <button className="b_btn btn btn-primary mt-4 mb-4">Learn More</button>
+                         <Link to="/howitworks"><button className="b_btn btn btn-primary mt-4 mb-4">Learn More</button></Link>
                 </div>
 
             </div>

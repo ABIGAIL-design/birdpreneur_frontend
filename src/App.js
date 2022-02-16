@@ -19,6 +19,8 @@ import Withdraw from './pages/Withdraw';
 import Countries from './components/Countries';
 import ProfilePage from './pages/ProfilePage';
 import ForgotPassword from './pages/ForgotPassword';
+import AllFarms from './pages/AllFarms';
+import RentalServices from './pages/RentalServices';
 
 
 
@@ -48,7 +50,8 @@ function App() {
             <Route exact path="/dashboard" element={ isAuthenticated ? <Dashboard/> : <Login/>}/>
             <Route exact path="/withdraw" element={ isAuthenticated ? <Withdraw/> : <Login/>}/>
             <Route exact path="/account" element={ isAuthenticated ? <ProfilePage/> : <Login/>}/>
-            
+            <Route exact path="/allfarms" element={<AllFarms/>}/>
+            <Route exact path="/rentalservices" element={ <RentalServices /> } />
             <Route exact path="/farms" element={ <Farms/> } />
         
           </Routes>

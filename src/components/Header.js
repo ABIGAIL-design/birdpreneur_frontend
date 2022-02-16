@@ -52,6 +52,13 @@ export default function Header() {
         </div>
       </>
       }
+    {!isAuthenticated &&
+      <div className="nav">
+        <Link to="/aboutus">
+        About Us
+        </Link>  
+      </div> 
+    }
     <div className="nav">
       <div className="title" onClick={()=>{ 
         if(showMore !== 'farms')  
@@ -100,16 +107,16 @@ export default function Header() {
         </div>
       }
     </div>
-    {!isAuthenticated &&
-      <div className="nav">
-        <Link to="/aboutus">
-        About Us
-        </Link>  
-      </div> 
-    }
+    
     <div className="nav">
       <Link to="/howitworks">
         How It Works
+      </Link>  
+    </div>
+
+    <div className="nav">
+      <Link to="/rentalservices">
+        Rental Services
       </Link>  
     </div>
     
