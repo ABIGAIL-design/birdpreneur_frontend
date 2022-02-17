@@ -15,7 +15,7 @@ export default function MissionBoard() {
                         setShowTab(0)
                 }}
             ><h4>Vision</h4>
-                {/* <i class="fa-brands fa-instagram"></i> */}
+                {/* <i className="fa-brands fa-instagram"></i> */}
             </div>
             {showTab === 1 &&
             <div className="tab_body"><p>To rebuild a robust and sustainable agricultural enterprise in Africa.</p></div>
