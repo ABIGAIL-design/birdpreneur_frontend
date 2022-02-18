@@ -416,6 +416,7 @@ color: white}
 }
 
 .photos .icon.users{
+    margin: auto;
     background: url("icons/user-regular.svg");
     width:50px;
     height: 50px;
@@ -427,6 +428,7 @@ color: white}
 
 .photos .icon.ship{
     background: url("icons/ship-solid.svg");
+    margin: auto;
     width:50px;
     height: 50px;
     margin-bottom: 20px;
@@ -437,6 +439,7 @@ color: white}
 
 
 .photos .icon.handshake{
+    margin: auto;
     background: url("icons/handshake-solid.svg");
     width:50px;
     height: 50px;
