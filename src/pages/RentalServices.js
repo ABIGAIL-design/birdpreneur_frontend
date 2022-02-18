@@ -25,7 +25,7 @@ export default function RentalServices() {
             </div>
           </div>
         </section>
-        <section className='Homepage-section farm'>
+        <section className='Homepage-section farm impact'>
           <div className='container'>
             <div className='col-12' style={{marginBottom:"100px"}}>
             <h2>HOW IT WORKS</h2>
@@ -85,7 +85,7 @@ export default function RentalServices() {
         </section>
 
 
-        <section className='Homepage-section'>
+        <section className='Homepage-section '>
           <div className='container'>
             <h2 className='mb-4'>WHAT CAN YOU RENT?</h2>
             <div className='row rentals'>
@@ -202,7 +202,12 @@ export default function RentalServices() {
             </div>
           </div>
         </section> */}
-
+        <section className=''>
+          <div className='container'>
+            <h2>Need help with your poultry farm?</h2>
+            <a href='http://birdpreneur.com/rentnow'><div className='btn btn-primary'>Contact Us</div></a>
+          </div>
+        </section>
         <Impacts />
 
         <Testimonials />
